@@ -4,6 +4,9 @@
     padding: 0;
     margin: 0;
 }
+.red{
+    color: #ff4a4a;
+}
 @font-face {
     font-family: brand;
     src: url(/font/FrutigerBQ-Black.otf);
@@ -142,6 +145,36 @@ body{
             }
         }
     }
+    .time{
+        padding: 1em;
+        .time-card{
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: center;
+            ul{
+                box-shadow: #a6a6a6 1px 1px 4px;
+                display: inline-grid;
+                grid-template-columns: 70px 70px 70px 70px;
+                grid-gap: 1px;
+                background-color: #a6a6a6;
+                border-radius: 5px;
+                li{
+                    background-color: #fff;
+                    list-style: none;
+                    text-align: center;
+                    font-size: 10px;
+                    // height: 50px;
+                    padding-top: 1.9em;
+                    padding-bottom: 0.7em;
+                    
+                    span{
+                        font-size: 15px;
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+    }
     .contact{
         background-color: #004ba8;
         margin-top: -1em;
@@ -171,5 +204,51 @@ body{
         text-transform: uppercase;
         font-weight: 900;
         font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .p-card{
+        display: grid;
+        grid-template-areas:
+        "card-top card-top"
+        "card time"
+        ;
+        .l-card{
+            grid-area: card-top;
+        }
+        .p-card-grid{
+            grid-area: card;
+        }
+        .time{
+            grid-area: time;
+        }
+    }
+    .contact{
+        display: grid;
+        grid-template-areas: 
+        "c c"
+        "t m";
+        .c{
+            display: none;
+        }
+        .text{
+            grid-area: t;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            ul{
+                li{
+                    list-style: none;
+                }
+            }
+        }
+        .map{
+            grid-area: m;
+            width: 100%;
+
+        }
     }
 }
