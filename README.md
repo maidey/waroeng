@@ -15,13 +15,8 @@ Fb [dai re](https://fb.com/deiterada)
 
 ## update 
 
-15 02 2022 >> HOME PAGE
-16 02 2022 >> more responsive + jamkerja
--
--
--
--
--
+15 02 2022 > HOME PAGE
+16 02 2022 > more responsive + jamkerja
 
 
 demo [HERE](https://maidey.github.io/waroeng/)
